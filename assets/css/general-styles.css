@@ -9,10 +9,11 @@
 }
 
 :root {
-    --btn-color: #3498db;
+    --btn-color: #1ecad3;
     --primary-blue: blue;
-    --bg: hsl(240, 100%, 98%);
-    --soft-bg: white;
+    --bg: #fff;
+    --soft-bg: hsl(0, 0%, 98%);
+    --text-color: rgba(4, 4, 4, 0.827);
 }
 
 button {
@@ -27,7 +28,5 @@ body {
     margin: 0 auto;
     margin-top: 4rem;
     font-family: "Roboto", sans-serif;
-    color: rgb(43, 43, 43);
+    color: var(--text-color);
 }
-
-

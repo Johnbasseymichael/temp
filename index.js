@@ -1,11 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     var calendarEl = document.getElementById("calendar");
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//         initialView: "dayGridMonth",
-//     });
-//     calendar.render();
-// });
-
 // banner swiper
 const swiper = new Swiper(".swiper", {
     slidesPerView: 2.2,
@@ -30,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("active");
         menuToggle.classList.toggle("active");
     });
-    
+
     // Close menu when clicking on a link
     document.querySelectorAll(".nav-item").forEach((link) => {
         link.addEventListener("click", () => {
@@ -39,3 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// ACCODOIN HANDLER
+document.querySelectorAll(".accordion-header").forEach((button) => {
+    button.addEventListener("click", () => {
+        const accordionContent = button.nextElementSibling;
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        // Close all panels
+        document.querySelectorAll(".accordion-header").forEach((header) => {
+            header.setAttribute("aria-expanded", "false");
+            header.nextElementSibling.classList.remove("active");
+        });
+
+        // If the clicked panel wasn't expanded, expand it
+        if (!isExpanded) {
+            button.setAttribute("aria-expanded", "true");
+            accordionContent.classList.add("active");
+        }
+    });
+});
+
+// DATE PICKER
+const calendar = new VanillaCalendar("#calendar");
+calendar.init();
