@@ -1,33 +1,11 @@
-*,
-*::after,
-*::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --btn-color: #3498db;
-    --primary-blue: blue;
-    --bg: hsl(244, 82%, 89%);
-    --soft-bg: hsl(244, 82%, 91%);
-}
-
-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
+@import url("./assets/css/footer.css");
+@import url("./assets/css/general-styles.css");
+@import url("./assets/css/banner-slider.css");
+@import url("./assets/css/navbar.css");
 
 /* ============================== */
-body {
-    background: var(--bg);
-    font-family: sans-serif;
-    color: rgb(43, 43, 43);
-}
 
-header .hero-imgs {
-}
+
 .hero-imgs img {
     width: 100%;
     height: 20rem;
@@ -120,6 +98,7 @@ header .hero-imgs {
 
 .hero .bottom h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 .hero .bottom h2 span {
     color: rgb(219, 89, 89);
@@ -324,7 +303,6 @@ iframe {
     background-position: center;
     background-repeat: no-repeat, repeat;
     padding: 3.5rem 1rem;
-    
 }
 
 .sign-cta-container {
@@ -417,13 +395,6 @@ iframe {
     content: "🎁";
 }
 
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .sign-cta-container {
         flex-direction: column;
@@ -447,12 +418,11 @@ iframe {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .partner-card {
-   border: 1px solid var(--btn-color); 
-       border-radius: 0.3rem;
+    border: 1px solid var(--btn-color);
+    border-radius: 0.3rem;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -487,7 +457,7 @@ iframe {
 }
 
 .shop-button.white {
-    background: transparent ;
+    background: transparent;
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
 }
@@ -506,7 +476,7 @@ iframe {
         display: grid;
         grid-template-columns: 65% 35%;
         align-items: start;
-        gap: 0.7rem;
+        gap: 1.5rem;
     }
 
     .hero h2 {
@@ -521,6 +491,10 @@ iframe {
         flex-direction: column;
         align-items: start;
         gap: 0.7rem;
+    }
+
+    .col1 h2 {
+        font-size: 2rem;
     }
 
     .hero .top .col1 > div > div {
@@ -568,7 +542,7 @@ iframe {
 
     .card {
         margin: 4rem auto;
-        
+
         max-width: 77rem;
     }
 
