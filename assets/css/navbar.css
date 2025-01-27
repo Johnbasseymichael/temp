@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #4195f5;
+    background-color: var(--btn-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -10,15 +10,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 .nav-logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+    aspect-ratio: 1/1;
+    width: 60px;
 }
+
+.nav-logo img {
+    width: 100%;
+    height: 100%;object-fit: cover;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -27,6 +32,7 @@
     color: white;
     text-decoration: none;
     transition: opacity 0.3s ease;
+    font-weight: 600;
 }
 .nav-item:hover {
     opacity: 0.8;
@@ -39,26 +45,34 @@
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+.menu-icon {
+    font-size: 2rem;
+}
+
 .close-icon {
     display: none;
+    font-size: 3rem;
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
+
     .nav-links {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background-color: #4195f5;
+        height: 90vh;
+        margin-top: 4rem;
+        background-color: var(--btn-color);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .nav-links.active {
         transform: translateX(0);
@@ -68,5 +82,9 @@
     }
     .menu-toggle.active .close-icon {
         display: block;
+    }
+
+    .nav-item {
+        font-size: 1.3rem;
     }
 }
