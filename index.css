@@ -208,7 +208,6 @@ input {
 .air-datepicker {
     width: 100% !important;
     margin: 2rem 0;
-
 }
 
 .bottom button {
@@ -525,15 +524,20 @@ iframe {
 }
 
 .partner-card {
-    border: 1px solid var(--btn-color);
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.05);
     border-radius: 0.3rem;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    transition: all 0.5s;
+}
+
+.partner-card:hover {
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.479);
+    transform: translateY(-0.5rem);
 }
 
 .partner-logo {
@@ -567,8 +571,7 @@ iframe {
 }
 
 .shop-button:hover {
-    background-color: #0077cc;
-    color: var(--bg);
+    opacity: 0.7;
 }
 
 /* =======TABLET======== */
