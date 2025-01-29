@@ -309,7 +309,7 @@
                         </div>
                     </div>
 
-                    <input type="text" id="datepicker" placeholder=""Selecteer een datum""style="" />
+                    <input type="text" id="datepicker" placeholder="Selecteer een datum" />
 
                     <button>
                         <span> Koop De Deal</span>
@@ -658,6 +658,14 @@
 <script>
   new AirDatepicker('#datepicker', {
     inline: true,
+    monthsField: 'monthsNominative',
+    months: [
+        'Januari', 'Februari', 'Maart', 'April',
+        'Mei', 'Juni', 'Juli', 'Augustus',
+        'September', 'Oktober', 'November', 'December'
+    ],
+    days: ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za']
+  });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
