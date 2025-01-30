@@ -64,6 +64,10 @@
     margin-bottom: 2rem;
 }
 
+.contact-form h2 {
+    margin: 1rem 0 ;
+}
+
 .form-group {
     margin-bottom: 1rem;
 }

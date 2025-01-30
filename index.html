@@ -20,7 +20,6 @@
             href="https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.css"
             rel="stylesheet"
         />
- 
 
         <title>Site-Name | Home</title>
     </head>
@@ -35,7 +34,9 @@
                         <a href="./" class="nav-item">Home</a>
                         <a href="#" class="nav-item">Features</a>
                         <a href="#" class="nav-item">Features2</a>
-                        <a href="./contact/index.html" class="nav-item">Contact</a>
+                        <a href="./contact/index.html" class="nav-item"
+                            >Contact</a
+                        >
                     </div>
                     <button
                         class="menu-toggle"
@@ -306,7 +307,11 @@
                         </div>
                     </div>
 
-                    <input type="text" id="datepicker" placeholder="Selecteer een datum" />
+                    <input
+                        type="text"
+                        id="datepicker"
+                        placeholder="Selecteer een datum"
+                    />
 
                     <button>
                         <span> Koop De Deal</span>
@@ -657,19 +662,7 @@
 
 <!-- Dutch Locale File -->
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/locale/nl.js"></script>
-<script>
-  new AirDatepicker('#datepicker', {
-    inline: true,
-    language: "nl"
-    monthsField: 'monthsNominative',
-    months: [
-        'Januari', 'Februari', 'Maart', 'April',
-        'Mei', 'Juni', 'Juli', 'Augustus',
-        'September', 'Oktober', 'November', 'December'
-    ],
-    days: ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za']
-  });
-</script>
 
+<!-- swiper js  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./index.js"></script>

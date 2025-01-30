@@ -52,6 +52,55 @@ document.querySelectorAll(".accordion-header").forEach((button) => {
     });
 });
 
-// DATE PICKER
-const calendar = new VanillaCalendar("#calendar");
-calendar.init();
+
+// AirDatepicker
+document.addEventListener("DOMContentLoaded", function () {
+    new AirDatepicker("#datepicker", {
+        inline: true,
+        locale: {
+            days: [
+                "Zondag",
+                "Maandag",
+                "Dinsdag",
+                "Woensdag",
+                "Donderdag",
+                "Vrijdag",
+                "Zaterdag",
+            ],
+            daysShort: ["Zo", "Ma", "Di", "Wo", "Do", "Vr", "Za"],
+            daysMin: ["Zo", "Ma", "Di", "Wo", "Do", "Vr", "Za"],
+            months: [
+                "Januari",
+                "Februari",
+                "Maart",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Augustus",
+                "September",
+                "Oktober",
+                "November",
+                "December",
+            ],
+            monthsShort: [
+                "Jan",
+                "Feb",
+                "Mrt",
+                "Apr",
+                "Mei",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Okt",
+                "Nov",
+                "Dec",
+            ],
+            today: "Vandaag",
+            clear: "Wissen",
+            dateFormat: "dd-MM-yyyy",
+            firstDay: 1,
+        },
+    });
+});
